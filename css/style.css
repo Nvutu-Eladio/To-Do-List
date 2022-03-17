@@ -12,6 +12,7 @@ body{
     /* background-color: purple; */
     background-image: url(../eladio.jpg);
     
+    
     margin: 0 auto 0;   
 }
 
@@ -89,22 +90,43 @@ input[type="checkbox"]{
     
      }
 
-     ul{
+     ul li{
         list-style-type: none; 
+        text-align: justify;
+        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        
+     }
+     button{
+        margin:auto;
         
      }
 
-    
      #apagar{
+         
+         position: relative;
          border: none;
          text-decoration: none;
          padding: 10px 24px;
+         display: inline;
          float: right;
-        
-        
+         cursor: pointer;
+         
+         margin: 0;
+         padding: 0;
+         width: 70px;
+         
+         
+     }
+
+     button:hover{
+         background-color: blanchedalmond;
      }
     
-     
+   
      
      /* button{
      position: static;
