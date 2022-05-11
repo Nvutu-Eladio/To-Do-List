@@ -1,7 +1,8 @@
+  
 body{
     
-    /* background-color: burlywood; */
-    background-image: url(../image1.jpg);
+    background-color: burlywood; 
+    /* background-image: url(../image1.jpg); */
     
     font-family: 'Mukta', sans-serif;
 }
@@ -48,11 +49,15 @@ body{
     
 }
 
+form{
+    display: flex;
+}
+
 input{
   position: relative;
   display: inline-block;
   font-size: 20px;
-    margin-bottom: 500px;
+    /* margin-bottom: 500px; */
     
     
  
@@ -108,6 +113,10 @@ input[type="submit"]:hover{
         width: 100%;
         justify-content: space-between;
         
+     }
+
+     ul{
+         width: 90%;
      }
     
 
