@@ -1,5 +1,5 @@
 let tasks = [];
-const btnSave = document.querySelector("#save");
+const btnSave = document.querySelector("#Save");
 const taskField = document.getElementById("task")
 const taskList = document.getElementById("task_list")
 
@@ -9,31 +9,31 @@ let dados = JSON.parse(localStorage.getItem('taskList')) || []
 taskList.innerHTML = dados
 
 
-// btnSave.addEventListener('click', function(){
-//   if(task.value){
-//       taskList.push(task.value)
-//        task.value = ""
-//        renderList()
-//    }
-//    salvarData()
-//  })
+btnSave.addEventListener('click', function(){
+  if(task.value){
+      taskList.push(task.value)
+       task.value = ""
+       renderList()
+   }
+   salvarData()
+ })
 
 
-btnSave.addEventListener("click", function(e) {
-  e.preventDefault();
+// btnSave.addEventListener("click", function(e) {
+//   e.preventDefault();
   
 
-  let task = taskField.value
+//   let task = taskField.value
 
-  if (!task) return alert("Digite Alguma Coisa!")
+//   if (!task) return alert("Digite Alguma Coisa!")
 
-  tasks.push(task)
-  taskField.value = ""
+//   tasks.push(task)
+//   taskField.value = ""
 
-  renderList()
+//   renderList()
   
-  return
-})
+//   return
+// })
 
 
 

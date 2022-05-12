@@ -1,212 +1,129 @@
-  
-body{
-    
-    background-color: burlywood; 
-    /* background-image: url(../image1.jpg); */
-    
-    font-family: 'Mukta', sans-serif;
-}
-
-::placeholder{
-    font-family: 'Mukta', sans-serif;
-    text-align: center;
-}
-
-.principal{
-    width: 960px;
-    height: 600px;
-    /* background-color: purple; */
-    background-image: url(../eladio.jpg);
-    
-    
-    margin: 0 auto 0;   
-}
-
-.content{
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);  
-}
-
-.conteudo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    margin-bottom: 500px;
-    
-    background-color: white;
-    width: 540px;
-    height: 250px;
-    display: inline-block;
+body {
     margin: 0;
     padding: 0;
-    max-width: 100%;
-    overflow: auto;
-    
-    
-}
-
-form{
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-image: url("../eladio.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-input{
-  position: relative;
-  display: inline-block;
-  font-size: 20px;
- margin-bottom: 500px;
-    
-    
- 
-}
-input[type="text"]{
-    background: #fff;
-    width: 340px;
-    height: 50px;
-    border-radius: none;
-    border-color: black;
-    padding: 0 25px;
-    border: rosybrown;
-    
-    
-    
-    
-}
-input[type="submit"]{
-    position: relative;
-    left: -5px;
-    border-radius: 0 25px 25px 0;
-    border-color: purple;
-    width: 150px;
-    height: 50px;
-    border:none;
+input[type=checkbox],
+button {
     cursor: pointer;
-    background: salmon;
-    color:red;
-    
 }
-
-input[type="submit"]:hover{
-    background: sienna;
+.container {
+    width: 600px;
+    min-height: 100vh;
+    padding: 0 20px;
 }
-
-/* input[type="checkbox"]{
-    position:relative;
-   padding: auto;
-   margin: 0;
-    width: 48px;
-    height: 10px;
+/* CSS Header - INICIO */
+header {
+    margin: 60px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    /* background-color: black; */
+    height: 46px;
+    padding: 0 0 0 4px;
+}
+header input {
+    flex: 1;
     border: none;
+    outline: none;
     text-align: center;
-    
-     } */
-
-     ul li{
-        list-style-type: none; 
-        text-align: justify;
-        flex-direction: column;
-        display: flex;
-        flex-direction: row;
+    font-size: 22px;
+    height: 40px;
+}
+::placeholder {
+    font-size: 25px;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+}
+header button {
+    width: 60px;
+    font-size: 20px;
+    height: 46px;
+    box-shadow: none;
+    outline: none;
+    background-color: salmon;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+header button:hover {
+    color: #c8c8c8;
+    transition: 0.1s;
+}
+header button:active {
+    background-color: #ebebeb;
+    color: black;
+}
+header input,
+header button {
+    padding: 0;
+    margin: 0;
+}
+/* CSS do Header - Fim */
+/* CSS das Notas - Inicio */
+.notas {
+    color: white;
+    /* border: 8px solid rgba(115, 115, 115, .2); */
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    height: calc(100vh - 166px);
+}
+.notas ul {
+    padding: 12px;
+    border: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    color: black;
+}
+.notas ul li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.notas ul li:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+.notas ul li button {
+    border: none;
+}
+.notas ul li p {
+    flex: 1;
+    margin-left: 8px;
+}
+#apagar {
+    background-color: transparent;
+}
+/* CSS das Notas -Fim */
+@media screen and (max-width: 806px) {
+    ::placeholder {
+        font-size: 20px;
+        font-family: 'roboto', sans-serif;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 684px) {
+    .container {
         width: 100%;
-        justify-content: space-between;
-        
-     }
-
-     ul{
-         width: 90%;
-     }
-    
-
-     #apagar{
-         
-         position: relative;
-         border: none;
-         text-decoration: none;
-         padding: 10px 24px;
-         display: inline;
-         float: right;
-         cursor: pointer;
-         
-         margin: 0;
-         padding: 0;
-         width: 70px;   
-         
-     }
-
-     button:hover{
-         background-color: blanchedalmond;
-     }
-    
-   
-     
- 
-
-    
-     @media screen and (max-width:1104px) {
-        .principal{
-            width: 400px;
-            height: 773px;
-            background-color: red;
-            margin: 0 auto 0;     
-        }
-
-        
-     
-        .conteudo{
-            position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%, -50%); 
-            margin-bottom: 500px;
-            background-color: white;
-            width: 399px;
-            height: 300px;
-            display: inline-block;
-            margin: 0;
-            padding: 0;
-            overflow: auto;
-            
-        }
-        input{
-            position: relative;
-            display: inline-block;
-            font-size: 20px;
-              margin-bottom: 500px;
-              
-           
-          }
-          input[type="text"]{
-              background: #fff;
-              /* width: 340px; */
-              width: 100px;
-              height: 50px;
-              display: inline-block;
-              border-radius: none;
-              border-color: black;
-              padding: 0 25px;
-              border: rosybrown;
-              
-              
-              
-          }
-          input[type="submit"]{
-              position: relative;
-              display: inline-block;
-              /* right: -5px; */
-              border-radius: 0 25px 25px 0;
-              border-color: purple;
-              width: 50px;
-              height: 50px;
-              border:none;
-              cursor: pointer;
-              background: salmon;
-              color:red;
-              margin: 0;
-              padding-right: 50px;
-              
-          }
-    } 
+        padding: 0 8px;
+    }
+    ::placeholder {
+        font-size: 15px;
+        font-family: 'roboto', sans-serif;
+        text-align: center;
+    }
+}

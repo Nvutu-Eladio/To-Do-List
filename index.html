@@ -18,19 +18,20 @@
 </head>
 <body>
 
-    <div class="principal">
-      <div class="content">
+   <div class="container">
+    <header>
+      <input id="txtTask" type="text" placeholder="O Que Está Pensando?">
 
-        <form action="">
-            <input type="text" name="task" class="text" placeholder="O Que Está Pensando?" id="txtTask">
-            <input type="submit" id="btnSave"  value="Send">
-          </form>
-      </div>
+      <!-- <input type="submit" id="btnSave"  value="Send"> -->
+      <button id="btnSave" type="submit" class="b-add">SEND</button>
+    </header>
+   
 
-      <div class="conteudo">
+      <section class="notas">
         <ul id="task_list">
           
         </ul>
+      </div>
         <!-- <p id="p1">qualquer coisa</p>
         <button>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16" onclick="removeClass()">
@@ -42,7 +43,7 @@
         <hr>
           <p id="p2">Adicionar qualquer coisa</p> -->
         
-      </div>
-    </div>
+      
+    
 </body>
 </html>
