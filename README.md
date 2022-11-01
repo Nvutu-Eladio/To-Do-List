@@ -12,4 +12,4 @@ As anotações ficam armazenadas em seu navegador durante o tempo que você dese
 
 Observação: Para ter acesso as suas anotações após armazenadas, é preciso que você use o mesmo navegador e dispositivo que você usou quando as criou.
 
-[Clique aqui para acessar a página](https://nvutu-eladio.github.io/iniciando_projecto/)
+[Clique aqui para acessar a página](https://nvutu-eladio.github.io/To-Do-List/)
